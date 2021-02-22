@@ -108,6 +108,15 @@ main {
   text-align:center;
   z-index: 1000;
   position: relative;
+  text-shadow: 0 0 2px #000;
+}
+
+.greenScore {
+  color: #6D4;
+}
+
+.redScore {
+  color: #D55;
 }
 
 .pokemon {
@@ -121,7 +130,7 @@ main {
 
 .pokeDesc {
   text-align:left;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.7rem;
 }
 
@@ -137,6 +146,7 @@ main {
   border-radius: 15px;
   padding: 20px;
   flex-basis: 50%;
+  min-width: 500px;
 }
 
 .removed {

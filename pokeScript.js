@@ -1,6 +1,7 @@
 app = {
   Owen: 0,
-  Esther: 0
+  Esther: 0,
+  goNext: true
 }
 
 app.pullJSON = () => {
@@ -37,24 +38,47 @@ app.pickNew = () => {
     )
     $('.pokeDesc').text(app.currentPokemon.description)
     $('.pokemon').removeClass('fadeOut')
+    app.goNext = false
   }
   $('#selector').on('click', () => {
-    $('.pokemon').addClass('fadeOut')
-    app.currentPokemon = app.randomPokemon()
-    setTimeout(()=>updateContent(),1100)
+    if (app.goNext) {
+      $('.pokemon').addClass('fadeOut')
+      app.currentPokemon = app.randomPokemon()
+      setTimeout(() => updateContent(), 1100)
+    }
   })
   $('.pokeName').on('click', () => {
-    $('.name').toggleClass('hidden')
+    if (!app.goNext) {
+      $('.name').toggleClass('hidden')
+      app.goNext = true
+    }
   })
 }
 
 app.scoreKeeping = () => {
+  const scoreCheck = () => {
+    if (app.Owen > app.Esther) {
+      $('#score1').addClass('greenScore')
+      $('#score2').addClass('redScore')
+      console.log('owen higher')
+    } else if (app.Owen < app.Esther) {
+      $('#score1').addClass('redScore')
+      $('#score2').addClass('greenScore')
+      console.log('esther higher')
+    } else {
+      $('#score1').removeClass(['greenScore','redScore'])
+      $('#score2').removeClass(['greenScore','redScore'])
+      console.log('tie')
+    }
+  }
   $('.score1').on('click', () => {
     app.Owen += 1
+    scoreCheck()
     $('.score1Tally').text(app.Owen)
   })
   $('.score2').on('click', () => {
     app.Esther += 1
+    scoreCheck()
     $('.score2Tally').text(app.Esther)
   })
 }
