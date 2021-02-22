@@ -1,0 +1,174 @@
+body {
+  background-image: radial-gradient(circle at 50%, #69a2ea, #368af1 70%);
+  overflow: hidden;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 67.5%;
+  color: white;
+  user-select: none;
+}
+img {
+  width: 100%;
+}
+header {
+  text-align:center;
+  width: 60%;
+  margin: 0 auto;
+  height: 30vh;
+}
+
+main {
+  height: 60vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.pokeName {
+  display:flex;
+  align-items:center;
+  width: 100%;
+  position:relative;
+  z-index: 100;
+  .name {
+    height: 80px;
+    width:100%;
+    text-align:center;
+    background-color: #0000;
+    transition: background-color, 1s;
+    font-size: 3rem;
+    padding-top: 15px;
+    color: #000;
+  }
+  .hidden {
+    background-color: #000F
+  }
+}
+
+.wtp {
+  width: 70%;
+  margin: 20px auto 0;
+}
+
+.fb {
+  width: 30%;
+  margin: 0 auto 20px;
+}
+
+.scoreName {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.tally {
+  font-size: 2.5rem;
+  color: white;
+  margin: 10px 0 0;
+}
+
+.scoreBox {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 300px;
+  height: 115px;
+}
+
+.pokeImage {
+  display:flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-basis: 100%;
+  position:relative;
+  .pokemonImage {
+    width:unset;
+    max-height: 400px;
+    max-width:400px;
+    z-index: 10;
+  }
+}
+
+.scores {
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  z-index: 1000;
+  position: relative;
+}
+
+.pokemon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.pokeDesc {
+  text-align:left;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.mainSection {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.sidebar {
+  background-color: #0003;
+  border-radius: 15px;
+  padding: 20px;
+  flex-basis: 50%;
+}
+
+.removed {
+  display:none;
+}
+
+.fadeOut {
+  opacity:0;
+}
+
+.placeholder {
+  margin: 200px 0;
+  font-size: 2rem;
+}
+
+.glow {
+  position: absolute;
+  z-index: 1;
+  width: 1000px;
+  height: 1000px;
+  top: -250px;
+}
+
+.glowLeft {
+  animation: 10s infinite linear glowLeftAnim;
+}
+
+.glowRight {
+  animation: 8.2s infinite linear glowRightAnim;
+}
+
+@keyframes glowLeftAnim {
+  0% {
+    transform:rotate(50deg)
+  }
+  100% {
+    transform:rotate(410deg)
+  }
+}
+
+@keyframes glowRightAnim {
+  0% {
+    transform:rotate(0deg)
+  }
+  100% {
+    transform:rotate(-360deg)
+  }
+}

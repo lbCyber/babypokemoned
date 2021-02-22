@@ -1,0 +1,132 @@
+{
+  "pokemon": [
+    {
+      "name": "Slowpoke",
+      "img": "./assets/0.png",
+      "type": ["water","psychic"],
+      "description": "Slow-witted and oblivious, this Pokémon won't feel any pain if its tail gets eaten. It won't notice when its tail grows back, either."
+    },
+    {
+      "name": "Farfetch'd",
+      "img": "./assets/1.png",
+      "type": ["normal", "flying"],
+      "description": "They use a plant stalk as a weapon, but not all of them use it in the same way. Several distinct styles of stalk fighting have been observed."
+    },
+    {
+      "name": "Ditto",
+      "img": "./assets/2.png",
+      "type": ["normal"],
+      "description": "It can transform into anything. When it sleeps, it changes into a stone to avoid being attacked."
+    },
+    {
+      "name": "Weedle",
+      "img": "./assets/3.png",
+      "type": ["bug", "poison"],
+      "description": "It has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red proboscis (nose)."
+    },
+    {
+      "name": "Venonat",
+      "img": "./assets/4.png",
+      "type": ["bug", "poison"],
+      "description": "It is said to have evolved with a coat of thin, stiff hair that covers its entire body for protection. It possesses large eyes that never fail to spot even miniscule prey."
+    },
+    {
+      "name": "Diglett",
+      "img": "./assets/5.png",
+      "type": ["ground"],
+      "description": "Its head pokes up approximately eight inches out of the ground. However, its real size remains a mystery to this day."
+    },
+    {
+      "name": "Seel",
+      "img": "./assets/6.png",
+      "type": ["water"],
+      "description": "The colder it gets, the better it feels. It joyfully swims around oceans so cold that they are filled with floating ice."
+    },
+    {
+      "name": "Squirtle",
+      "img": "./assets/7.png",
+      "type": ["water"],
+      "description": "It shelters itself in its shell, then strikes back with spouts of water at every opportunity."
+    },
+    {
+      "name": "Meowth",
+      "img": "./assets/8.png",
+      "type": ["normal"],
+      "description": "It is fascinated by round objects. It can't stop playing with them until it tires and falls asleep."
+    },
+    {
+      "name": "Rattata",
+      "img": "./assets/9.png",
+      "type": ["normal"],
+      "description": "Its fangs are long and very sharp. They grow continuously, so it gnaws on hard things to whittle them down."
+    },
+    {
+      "name": "Jigglypuff",
+      "img": "./assets/10.png",
+      "type": ["normal","fairy"],
+      "description": "Looking into its cute, round eyes makes it start singing a song so pleasant listeners can't help but fall asleep."
+    },
+    {
+      "name": "Mr. Mime",
+      "img": "./assets/11.png",
+      "type": ["psychic","fairy"],
+      "description": "It creates invisible walls with its pantomiming. If you don't act impressed, it will attack you with a double slap!"
+    },
+    {
+      "name": "Magikarp",
+      "img": "./assets/12.png",
+      "type": ["water"],
+      "description": "A pathetic excuse for a Pokémon that is only capable of flopping and splashing. No one knows why it has managed to survive."
+    },
+    {
+      "name": "Eevee",
+      "img": "./assets/13.png",
+      "type": ["normal"],
+      "description": "It has an unstable genetic makeup that suddenly mutates due to the environment in which it lives. Radiation from various stones causes this Pokémon to evolve."
+    },
+    {
+      "name": "Snorlax",
+      "img": "./assets/14.png",
+      "type": ["normal"],
+      "description": "It is not satisfied unless it eats over 880 pounds of food every day. When it is done eating, it goes promptly to sleep."
+    },
+    {
+      "name": "Gastly",
+      "img": "./assets/15.png",
+      "type": ["ghost","poison"],
+      "description": "It's said that gas emanating from a graveyard was possessed by the grievances of the deceased and thus became a Pokémon. Should a strange light be seen flickering in an abandoned building, this Pokémon is lurking there."
+    },
+    {
+      "name": "Growlithe",
+      "img": "./assets/16.png",
+      "type": ["fire"],
+      "description": "Very friendly and faithful to people. Its superb sense of smell ensures that this Pokémon won't forget any scent, no matter what. It uses its sense of smell to detect the emotions of others."
+    },
+    {
+      "name": "Charmander",
+      "img": "./assets/17.png",
+      "type": ["fire"],
+      "description": "Obviously prefers hot places. From the time it is born, a flame burns at the tip of its tail. Its life would end if the flame were to go out."
+    }
+  ],
+  "types": {
+    "bug": "olive",
+    "dark": "black",
+    "dragon": "purple",
+    "electric": "yellow",
+    "fairy": "pink",
+    "fighting": "maroon",
+    "fire": "red",
+    "flying": "cornflowerblue",
+    "ghost": "aubergine",
+    "grass": "green",
+    "ground": "beige",
+    "ice": "cyan",
+    "normal": "grey",
+    "poison": "magenta",
+    "psychic": "rose",
+    "rock": "brown",
+    "steel": "silver",
+    "water": "blue"
+  }
+}
