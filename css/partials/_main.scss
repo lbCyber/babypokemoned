@@ -40,10 +40,23 @@ main {
     transition: background-color, 1s;
     font-size: 3rem;
     padding-top: 15px;
-    color: #000;
+    color: #FFF;
+    text-shadow: 0 0 4px #000;
   }
   .hidden {
-    background-color: #000F
+    background-color: #000F;
+    position:relative;
+    color: #000;
+    &::after {
+      content: 'Click here to reveal!';
+      color: #FFF;
+      position:absolute;
+      font-size: 2rem;
+      text-align:center;
+      width: 100%;
+      left:0;
+      top:25px;
+    }
   }
 }
 
@@ -145,6 +158,7 @@ main {
   width: 1000px;
   height: 1000px;
   top: -250px;
+  pointer-events:none;
 }
 
 .glowLeft {
@@ -157,18 +171,26 @@ main {
 
 @keyframes glowLeftAnim {
   0% {
-    transform:rotate(50deg)
+    transform:rotate(50deg);
   }
   100% {
-    transform:rotate(410deg)
+    transform:rotate(410deg);
   }
 }
 
 @keyframes glowRightAnim {
   0% {
-    transform:rotate(0deg)
+    transform:rotate(0deg) scaleX(-1);
+    opacity: .9;
+  }
+  20% {
+    opacity: 1;
+  }
+  70% {
+    opacity: .7;
   }
   100% {
-    transform:rotate(-360deg)
+    opacity: .9;
+    transform:rotate(-360deg) scaleX(-1);
   }
 }

@@ -218,10 +218,6 @@ html {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   margin-top: 50px; }
 
 .bug {
@@ -328,9 +324,21 @@ main {
     transition: background-color, 1s;
     font-size: 3rem;
     padding-top: 15px;
-    color: #000; }
+    color: #FFF;
+    text-shadow: 0 0 4px #000; }
   .pokeName .hidden {
-    background-color: #000F; }
+    background-color: #000F;
+    position: relative;
+    color: #000; }
+    .pokeName .hidden::after {
+      content: 'Click here to reveal!';
+      color: #FFF;
+      position: absolute;
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+      left: 0;
+      top: 25px; }
 
 .wtp {
   width: 70%;
@@ -440,7 +448,8 @@ main {
   z-index: 1;
   width: 1000px;
   height: 1000px;
-  top: -250px; }
+  top: -250px;
+  pointer-events: none; }
 
 .glowLeft {
   -webkit-animation: 10s infinite linear glowLeftAnim;
@@ -468,16 +477,28 @@ main {
 
 @-webkit-keyframes glowRightAnim {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg) scaleX(-1);
+    transform: rotate(0deg) scaleX(-1);
+    opacity: .9; }
+  20% {
+    opacity: 1; }
+  70% {
+    opacity: .7; }
   100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
+    opacity: .9;
+    -webkit-transform: rotate(-360deg) scaleX(-1);
+    transform: rotate(-360deg) scaleX(-1); } }
 
 @keyframes glowRightAnim {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
+    -webkit-transform: rotate(0deg) scaleX(-1);
+    transform: rotate(0deg) scaleX(-1);
+    opacity: .9; }
+  20% {
+    opacity: 1; }
+  70% {
+    opacity: .7; }
   100% {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg); } }
+    opacity: .9;
+    -webkit-transform: rotate(-360deg) scaleX(-1);
+    transform: rotate(-360deg) scaleX(-1); } }
